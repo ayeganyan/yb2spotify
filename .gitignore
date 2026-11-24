@@ -1,0 +1,22 @@
+# Python environments and build artifacts
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+build/
+dist/
+*.egg-info/
+
+# Local configuration and OAuth credentials
+.env
+.env.*
+!.env.example
+youtube.json
+youtube-oauth.json
+google-client.json
+client_secret_*.json
+spotify-client
+spotify-token
+
+# macOS metadata
+.DS_Store

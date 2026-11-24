@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yb2spotify"
+version = "0.1.0"
+description = "Interactive CLI for importing YouTube Music playlists into Spotify"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["ytmusicapi>=1.10,<2", "spotipy>=2.25,<3", "rich>=13,<16", "InquirerPy>=0.3.4,<0.4"]
+
+[project.scripts]
+yb2spotify = "yb2spotify:main"
+
+[tool.setuptools]
+py-modules = ["yb2spotify"]
